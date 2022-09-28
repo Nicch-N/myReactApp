@@ -1,14 +1,15 @@
 import '../css/TicTacToe.css';
+import React from 'react';
 
-function square(){
+function Square(){
   return ( <div className="smallBox"/> );
 }
 
-class TicTacToe extends React.Component(){
+class TicTacToe extends React.Component{
   render(){
     return (
       <div>
-        <square/>
+        <Square/>
         Testt
       </div>
     );
