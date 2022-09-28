@@ -3,9 +3,9 @@ import $ from 'jquery';
 import Popper from 'popper.js';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './css/index.css';
 import App from './App';
-import NavBar from './NavBar';
+import NavBar from './components/NavBar';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
