@@ -7,12 +7,15 @@ import './css/index.css';
 import App from './App';
 import NavBar from './components/NavBar';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NavBar/>
-    <App />
+    <Router>
+		<NavBar/>
+    	<App />
+    </Router>
   </React.StrictMode>
 );
 

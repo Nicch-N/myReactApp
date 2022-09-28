@@ -1,7 +1,18 @@
-function TicTacToe(){
-  return (
-    <div>Hi!</div>
-  );
+import '../css/TicTacToe.css';
+
+function square(){
+  return ( <div className="smallBox"/> );
 }
 
-export default TicTacToe
+class TicTacToe extends React.Component(){
+  render(){
+    return (
+      <div>
+        <square/>
+        Testt
+      </div>
+    );
+  }
+}
+
+export default TicTacToe;

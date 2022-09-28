@@ -1,10 +1,6 @@
 import logo from '../assets/logo.svg';
 import '../css/App.css';
 import React from 'react';
-import ReactSlider from 'react-slider';
-import ReactDOM from 'react-dom/client';
-import NavBar from './NavBar';
-import App from '../App';
 function SpinningLogo(props){
   if(props.speed===0){
     return (<img src={logo} className="App-logo" alt="logo" />);
@@ -45,18 +41,8 @@ class Home extends React.Component{
           <button className='btn bg-primary' onClick={this.handleClick.bind(this)}>Click!</button>
           
         </header>
-        <ReactSlider/>
       </div>
     );
   }
-  
 }
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <NavBar/>
-    <Home/>
-  </React.StrictMode>
-);
 export default Home;

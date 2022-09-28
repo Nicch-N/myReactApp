@@ -14,7 +14,6 @@ function App(){
   return (
     <>
       {/* This is the alias of BrowserRouter i.e. Router */}
-      <Router>
         <Routes>
           {/* This route is for home component 
           with exact path "/", in component props 
@@ -32,7 +31,6 @@ function App(){
           and redirects app to home component with to="/" */}
           {/* <Route path="/" element={<Navigate replace to="/home" />} /> */}
         </Routes>
-      </Router>
     </>
   );
 }
